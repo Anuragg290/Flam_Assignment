@@ -5,7 +5,7 @@ import { DataPoint, FilterOptions, TimeRange } from '@/lib/types';
 import { DataGenerator } from '@/lib/dataGenerator';
 
 const INITIAL_DATA_COUNT = 1000;
-const MAX_DATA_POINTS = 10000;
+const MAX_DATA_POINTS = 100000;
 
 /**
  * Hook for managing real-time data stream

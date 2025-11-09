@@ -4,12 +4,10 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { DataPoint, FilterOptions, TimeRange } from '@/lib/types';
 import { DataGenerator } from '@/lib/dataGenerator';
 
-const INITIAL_DATA_COUNT = 1000;
+const INITIAL_DATA_COUNT = 5000;
 const MAX_DATA_POINTS = 100000;
 
-/**
- * Hook for managing real-time data stream
- */
+
 export function useDataStream(intervalMs: number = 100) {
   const [data, setData] = useState<DataPoint[]>([]);
   const [isStreaming, setIsStreaming] = useState(false);
